@@ -176,11 +176,11 @@ def create_category_distribution_chart(data):
     return fig
 
 def create_popular_items_chart(data):
-    item_counts = data['Menu'].value_counts().head(10)
+    item_counts = data['Menu'].value_counts().head(20)
     fig = px.bar(
         x=item_counts.index,
         y=item_counts.values,
-        title="Top 10 Most Common Menu Items",
+        title="Top 20 Most Common Menu Items",
         labels={'x': 'Menu Item', 'y': 'Frequency'},
         color=item_counts.values,
         color_continuous_scale='Viridis'
