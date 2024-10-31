@@ -2,8 +2,6 @@ pandas
 plotly
 streamlit
 numpy
-collections
-itertools
-PIL
+Pillow
 matplotlib
 seaborn
